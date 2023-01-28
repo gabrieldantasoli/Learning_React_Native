@@ -15,16 +15,27 @@ export default class App extends Component {
 }*/
 
 export default function App() {
-  
+
   return(
-    <View style={styles.area}>
-      <Text style={[styles.text,styles.align]}>USando grupo de estilos .</Text>
-      <Text style={styles.text}>Para que ?</Text>
-      <Text style={[styles.paragraph,styles.align]}>Melhor estilização e organização do codigo.</Text>
+    <View>
+      <Text>WORKING</Text>
     </View>
   )
 }
 
+
+function alinhamentos() {
+  return(
+    <View style={{flex: 1, flexDirection: "column",justifyContent: "space-between", alignItems: "center"}}>
+      <View style={{height: 60, width: 60, backgroundColor: "#121212"}}></View>
+      <View style={{height: 60, width: 60, backgroundColor: "#ff0000"}}></View>
+      <View style={{height: 60, width: 60, backgroundColor: "#00ff22"}}></View>
+    </View>
+  )
+}
+
+
+// Estilos de gripos comecam aqui
 const styles = StyleSheet.create({
   area: {
     backgroundColor: "#b5b0b0",
@@ -44,6 +55,16 @@ const styles = StyleSheet.create({
     textAlign: "center"
   }
 })
+function styleDeGrupos() {
+  return(
+    <View style={styles.area}>
+      <Text style={[styles.text,styles.align]}>USando grupo de estilos .</Text>
+      <Text style={styles.text}>Para que ?</Text>
+      <Text style={[styles.paragraph,styles.align]}>Melhor estilização e organização do codigo.</Text>
+    </View>
+  )
+}
+// Estilos de gripos terminam aqui
 
 
 
